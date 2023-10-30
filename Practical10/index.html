@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Here</button>
+    <p id="p1">This is a paragrah with little content</p>
+    <p id="p2">Click ME This is another small paragraph</p>
+    <p id="p3">Moving</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script lang="javascript">
+        $("button").click(function(){
+            $("#p1").toggle();
+        });
+        $("#p2").click(function() {
+            $("#p2").hide();
+        });
+        $("#button").click(function(){
+            $("#p3").animate({height: 'toggle'});
+        })
+
+    </script>
+</body>
+</html>
